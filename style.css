@@ -1,0 +1,68 @@
+body {
+    background: linear-gradient(135deg, #f8e7d3 0%, #ffe5ec 100%);
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    /* min-width: 320px;
+    max-width: 500px; or any width you want */
+    width: 320px;
+    /* width: 100vw; */
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 18px;
+    color: #b85c38;
+    letter-spacing: 1px;
+}
+
+ul#movie, ul#matches {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 340px;
+    background: #fff8f0;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(180, 120, 80, 0.08);
+    min-height: 120px;
+}
+
+ul#movie li, ul#matches li {
+    padding: 18px 20px;
+    border-bottom: 1px solid #f3d6b6;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul#movie li:last-child, ul#matches li:last-child {
+    border-bottom: none;
+}
+
+strong {
+    color: #b85c38;
+    font-size: 1.2rem;
+}
+
+img {
+    margin: 12px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(180, 120, 80, 0.12);
+    background: #fff;
+}
+
+@media (max-width: 400px) {
+    ul#movie, ul#matches {
+        max-width: 98vw;
+        padding: 0 2vw;
+    }
+    body {
+        min-width: unset;
+    }
+}
